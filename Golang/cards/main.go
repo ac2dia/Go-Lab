@@ -11,12 +11,22 @@ func main() {
 	// card := newCard()
 	// fmt.Println(card)
 
+	// cards := newDeck()
+
+	// hand, remainingCards := deal(cards, 5)
+
+	// hand.print()
+	// remainingCards.print()
+
+	// cards := newDeck()
+	// cards.saveToFile("my_cards")
+
+	// cards := newDeckFromFile("my_cards")
+	// cards.print()
+
 	cards := newDeck()
-
-	hand, remainingCards := deal(cards, 5)
-
-	hand.print()
-	remainingCards.print()
+	cards.shuffle()
+	cards.print()
 }
 
 /*
@@ -45,8 +55,5 @@ data structure for Handling list
 for index, card := range cards {
 	fmt.Println(i, card)
 }
-
-------------
-
 
 */
